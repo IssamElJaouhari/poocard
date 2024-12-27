@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+
+      #products,
+      .cart {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .product,
+      .cart-item {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .product:hover,
+      .cart-item:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      button {
+        padding: 10px 15px;
+        margin: 10px 0 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #3498db;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+
+      .cart {
+        margin-top: 40px;
+        padding: 20px;
+        border: 2px solid #3498db;
+        border-radius: 10px;
+        background-color: #eaf5fc;
+      }
+
+      #cart-items {
+        margin-top: 15px;
+      }
+
+      #total-price {
+        font-size: 1.5rem;
+        color: #e74c3c;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+
+    <div id="products">
+      <h2>Products</h2>
+      <!-- Products will be dynamically added here -->
+    </div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <p><strong>Total Price:</strong> $<span id="total-price">0.00</span></p>
+    </div>
+
+    <script></script>
+    <script src="./poo.js"></script>
+  </body>
+</html>
